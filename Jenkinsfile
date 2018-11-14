@@ -6,7 +6,7 @@ pipeline {
    steps{
    echo 'running build'
    sh './gradlew build --nodemon'
-   archiveArtifacts artifacts 'dest/trainSchedule.zip'
+   archiveArtifacts artifacts: 'dest/trainSchedule.zip'
    }
   }
   }
